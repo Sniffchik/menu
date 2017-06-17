@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+@keyframes serdze1 {
+	0% {
+		background: url(../images/piz1.jpg); 
+		background-size: 900px 500px;
+		 
+		}
+	100% {
+		background: url(../images/piz1.jpg);
+		background-size: 900px 500px; 
+		transform: translatex(-900px);
+		}
+}
+@keyframes serdze2 {
+	0% {
+		background: url(../images/piz2.jpg); 
+		background-size: 900px 500px;
+		 
+		}
+	100% {
+		background: url(../images/piz2.jpg);
+		background-size: 900px 500px; 
+		transform: translatex(-900px);
+		}
+}
+@keyframes serdze3 {
+	0% {
+		background: url(../images/piz3.jpg); 
+		background-size: 900px 500px;
+		 
+		}
+	100% {
+		background: url(../images/piz3.jpg);
+		background-size: 900px 500px; 
+		transform: translatex(-900px);
+		}
+}
+
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: 0;
+	font-family: font-family: 'Pangolin', cursive;
+}
+body {
+	
+}
+
+   /*   shapka saita*/
+header {
+	height: 50px;
+	border-bottom: 20px solid green;
+}
+.center {
+	width: 900px;
+	background: #EA3939; 
+	height: 50px;
+	margin: 0 auto;
+	 
+}
+.logo {
+	height: 50px;
+	width: 250px;
+	background: url(../images/logo.png) center center no-repeat;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px; 
+}
+     /* navigazija*/
+nav {
+	height: 50px;
+	display: inline-block;
+	vertical-align: top; 
+}
+.menu {
+	display: inline-block;
+	vertical-align: top;
+}
+.lev_1 {
+	height: 50px;
+	padding: 0 8px;
+	border-left: 1px solid #F8F1D8;
+	/*border-right: 2px solid grey;*/
+}
+.nap {
+	border-right: 1px solid #F8F1D8;
+}
+.menu:hover .lev_1 {
+	background: #EA8A8A;
+	/*color: #221B1B;*/
+	cursor: pointer;
+}
+
+.nazlev_1 {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 23px;
+	color: #F8F1D8;
+	line-height: 50px;
+
+}
+.menu:hover .nazlev_1 {
+	color: #221B1B;
+	/*padding: 2px 0 2px 4px;*/
+	transition: 0.5s;
+}
+.strelk {
+	/*height: 50px;
+	width: 10px;*/
+	/*background: url(../images/strelki/arrow.svg) center no-repeat ;*/
+	display: inline-block;
+	vertical-align: top;
+	transition: all 300ms;
+	border-top: 7px solid #F8F1D8;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-right: 7px solid transparent;
+	margin: 24px 0 0 5px;
+}
+.menu:hover .strelk{
+	transform: rotate(-180deg);
+	/*background: url(../images/strelki/arrow_black.svg) center no-repeat;*/
+	/*height: 50px;
+	width: 10px;*/
+	margin: 18px 0 0 5px;
+	border-top: 7px solid white;
+}
+.lev_2 {
+	/*border: 1px solid #F8F1D8;*/
+	position: absolute;
+	background: #EA8A8A;
+	display: none;
+}
+/*.lev_2:hover {
+	transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+    }*/ /*выпадающий список*/
+
+.lev_2 div {
+	line-height: 35px;
+	padding: 0 17px;
+	border: 1px solid #F8F1D8;
+}
+.lev_2 div:hover {
+	background: #E87373;
+	color: #221B1B;
+	cursor: pointer;
+	transform: scale(1.1); 
+}
+.lev_2 a {
+	text-decoration: none;
+	font-size: 24px;
+	color: #221B1B;
+}
+/*.lev_2 a:hover {
+	display: inline-block;
+	transform: scale(2); 
+}*/
+   /* contakti*/
+.cont {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+.levc_1 {
+	width: 172px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 23px;
+	color: #F8F1D8;
+	padding: 0 8px;
+	
+}
+.levc_1:hover {
+	background: #EA8A8A;
+	color: #221B1B;
+	cursor: pointer;
+}
+.levc_2 {
+	height: 160px;
+	width: 520px;
+	background: #EA8A8A;
+	position: absolute;
+	border: 1px solid #F8F1D8;
+	right: 0;
+	display: none;
+
+}
+.levc_2 div {
+	color: #F8F1D8;
+	background: #EA8A8A;
+}
+.levc_2 div:hover {
+	color: #221B1B;
+	background: #E87373;
+	border: 1px solid #F8F1D8;
+	transform: scale(1.1);
+	transition: all 300ms;
+}
+  
+.con_2, .con_3 {
+	display: inline-block;
+	width: 258px;
+	height: 70px;
+	font-size: 16px;
+	text-align: left;
+}
+.con_1 {
+	height: 90px;
+	text-align: center;
+	font-size: 55px;
+
+}
+div.con_x {
+	position: absolute;
+	top: -8px;
+	right: -25px;
+	font-size: 15px;
+	background: olive;
+	height: 50px;
+	width: 50px;
+}
+div.con_x:hover {
+	color: yellow;
+	transform: rotate(360deg);
+	transition: 2s;
+}
+
+    /*  BANNER???????????????????*/
+.ban1 {
+	background: url(../images/pizza.jpg) center/cover;
+	width: 900px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.ban2 {
+	background: rgba(0, 0, 0, 0.3);
+	height: 200px;
+	width: 900px;
+
+}
+.ban2 div {
+	color: #f8bf65;
+	font-size: 35px;
+	text-align: center;
+	line-height: 350px;
+}
+
+/*,,,,,,,,,,,seredina????????????*/
+.krug {
+	position: relative;
+}
+.seredina1 {
+	height: 500px;
+	width: 900px;
+	animation: serdze1 5s linear infinite; 
+	position: absolute;
+	background: red;
+	top: 270px;
+	left: 182px;
+	
+}
+.seredina2 {
+	height: 500px;
+	width: 900px;
+	animation: serdze2 5s linear 5s infinite;
+	
+	position: absolute;
+	background: pink;
+	top: 270px;
+	left: 1082px;
+	
+}
+.seredina3 {
+	height: 500px;
+	width: 900px;
+	animation: serdze3 5s linear 10s infinite;
+	position: absolute;
+	background: green;
+	top: 270px;
+	left: 1982px;
+}	
+
+
+
+
+       /*       footer*/
+
+
+footer {
+ 	background-color: red;
+ 	width: 900px;
+	margin: 0 auto;
+}
+footer a {
+ 	text-decoration: none;
+ 	font-size: 16px;
+ 	color: black;
+ }
+ .tabl {
+ 	width: 840px;
+ 	display: table;
+/* 	margin: 0 auto;*/
+	padding: 20px 0 0 50px;
+ }
+.row {
+ 	display: table-row;
+}
+.cell {
+ 	display: table-cell;
+ 	font-size: 16px;
+ 	color: #2d2f30;
+ 	line-height: 40px;
+ 	text-align: left;
+ }
+ .hea {
+ 	font-size: 25px;
+ 	font-weight: bold;
+}
